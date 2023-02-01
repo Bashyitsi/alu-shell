@@ -1,5 +1,7 @@
-Write a script that prints a number with two decimal places, followed by a new line.
+Write a script that converts a number from base 10 to base 16.
 
 
 
-The number will be stored in the environment variable NUM.
+The number in base 10 is stored in the environment variable DECIMAL
+
+The script should display the number in base 16, followed by a new line
