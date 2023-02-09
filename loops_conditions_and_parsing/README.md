@@ -1,19 +1,21 @@
-Write a Bash script that displays the visitor IP along with the HTTP status code from the Apache log file.
+Using what you did in the previous exercise, write a Bash script that groups visitors by IP and HTTP status code, and displays this data.
 
 
 
-Requirement:
+Requirements:
 
 
 
-Format: IP HTTP_CODE
+The exact format must be:
 
-in a list format
+OCCURENCE_NUMBER IP HTTP_CODE
+
+In list format
+
+Ordered from the greatest to the lowest number of occurrences
 
 See example
 
 You must use awk
 
 You are not allowed to use while, for, until and cut
-
-Download and commit the apache-access.log file along with your answers files 
