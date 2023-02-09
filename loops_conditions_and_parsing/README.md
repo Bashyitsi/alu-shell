@@ -6,4 +6,4 @@ Requirements:
 
 
 
-You must use the while loop (for and until are forbidden)
+You must use the until loop (for and while are forbidden)
