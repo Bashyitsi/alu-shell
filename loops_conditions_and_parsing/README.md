@@ -1,4 +1,4 @@
-Write a Bash script that gives you information about the school file.
+Write a Bash script that displays numbers from 1 to 100.
 
 
 
@@ -6,20 +6,12 @@ Requirements:
 
 
 
-You must use if and, else (case is forbidden)
+Displays FizzBuzz when the number is a multiple of 3 and 5
 
-Your Bash script should check if the file exists and print:
+Displays Fizz when the number is multiple of 3
 
-if the file exists: school file exists
+Displays Buzz when the number is a multiple of 5
 
-if the file does not exist: school file does not exist
+Otherwise, displays the number
 
-If the file exists, print:
-
-if the file is empty: school file is empty
-
-if the file is not empty: school file is not empty
-
-if the file is a regular file: school is a regular file
-
-if the file is not a regular file: (nothing)
+In a list format
