@@ -5,10 +5,6 @@ count=0
 
 until [count -eq 10]
 do
-<<<<<<< HEAD
     echo "Best School"
-=======
-    echo"Best school"
->>>>>>> 27d9df4bc6d6c9934108759460c9fbb7305ac252
     ((count ++))
 done
