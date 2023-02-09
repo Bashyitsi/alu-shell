@@ -1,13 +1,17 @@
-Write a Bash script that displays the time for 12 hours and 59 minutes:
+Write a Bash script that displays:
 
 
 
-display hours from 0 to 12
+The content of the current directory
 
-display minutes from 1 to 59
+In a list format
+
+Where only the part of the name after the first dash is displayed (refer to the example)
 
 Requirements:
 
 
 
-You must use the while loop (for and until are forbidden)
+You must use the for loop (while and until are forbidden)
+
+Do not display hidden files
