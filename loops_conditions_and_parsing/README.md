@@ -1,17 +1,25 @@
-Write a Bash script that displays:
+Write a Bash script that gives you information about the school file.
 
 
-
-The content of the current directory
-
-In a list format
-
-Where only the part of the name after the first dash is displayed (refer to the example)
 
 Requirements:
 
 
 
-You must use the for loop (while and until are forbidden)
+You must use if and, else (case is forbidden)
 
-Do not display hidden files
+Your Bash script should check if the file exists and print:
+
+if the file exists: school file exists
+
+if the file does not exist: school file does not exist
+
+If the file exists, print:
+
+if the file is empty: school file is empty
+
+if the file is not empty: school file is not empty
+
+if the file is a regular file: school is a regular file
+
+if the file is not a regular file: (nothing)
