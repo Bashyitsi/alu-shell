@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # displays Best School 10 times.
 
-count=10
+count=0
 
-until [ count -lt 1 ]
+until [ count -eq 10 ]
 do
     echo "Best School"
     ((count ++))
