@@ -1,31 +1,24 @@
 #!/usr/bin/env bash
-# Bash (init) script 11-manage_my_process that manages manage_my_process. (both files need to be pushed to git)
+#manage my process
 
-start () {
+file=/var/run/my_process.pid
+if [ "$1" == "start" ];
+then
     ./manage_my_process &
-    echo $! > /var/run/my_process.pid
+    sudo bash -c "echo $! > $file"
     echo "manage_my_process started"
-}
-
-stop () {
-    pkill -f "./manage_my_process"
-    rm /var/run/my_process.pid
+elif [ "$1" == "stop" ];
+then
+    pkill -f ./manage_my_process
+    sudo rm $file
     echo "manage_my_process stopped"
-}
-
-restart () {
-    pkill -f "./manage_my_process"    
-    rm /var/run/my_process.pid
+elif [ "$1" == "restart" ];
+then
+    pkill -f ./manage_my_process
+    sudo rm $file
     ./manage_my_process &
-    echo $! >> /var/run/my_process.pid
+    sudo bash -c "echo $! > $file"
     echo "manage_my_process restarted"
-}
-
-case "$1" in
-   start) start ;;
-   stop)  stop;;
-   restart) restart;;
-   *) echo "Usage: manage_my_process {start|stop|restart}"
-      
-      ;;
-esac
+else
+    echo "Usage: manage_my_process {start|stop|restart}"
+fi
